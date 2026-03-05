@@ -1,92 +1,68 @@
-import React from "react";
+import React, { useState } from "react";
 import ContactButton from "./ContactButton";
 
 function CoverLetter() {
+  const [isProfileImageMissing, setIsProfileImageMissing] = useState(false);
+
   return (
     <div className="container-fluid">
       <div className="row mt-2">
         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-          <img
-            src="/kellen1.png"
-            className="img-fluid img-thumbnail"
-            alt="Kellen"
-          />
+          {isProfileImageMissing ? (
+            <div
+              className="img-fluid img-thumbnail d-flex align-items-center justify-content-center bg-light"
+              style={{ minHeight: "520px" }}
+            >
+              <p className="text-muted mb-0 px-3 text-center">
+                Add your photo at <code>/public/ProfilePic.jpg</code>.
+              </p>
+            </div>
+          ) : (
+            <img
+              src="/ProfilePic.jpg"
+              className="img-fluid img-thumbnail"
+              alt="Kaylee Mehlhorn"
+              onError={() => setIsProfileImageMissing(true)}
+            />
+          )}
           <div className="row">
-              <ContactButton showDownloadPdf downloadLabel="Download Resume" />
+            <ContactButton showDownloadPdf downloadLabel="Download Resume" />
           </div>
         </div>
         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
           <hr />
           <div className="row">
             <h3>
-              Kellen Stuart{" "}
-              <small className="text-muted">Senior Software Engineer</small>
+              Kaylee Mehlhorn{" "}
+              <small className="text-muted">Software Engineering Graduate (2026)</small>
             </h3>
           </div>
           <hr />
           <div className="row mt-3">
             <h3>Education</h3>
             <p>
-              Kellen graduated from{" "}
-              <a href="https://western.edu/" className="link">
-                Western State Colorado University
-              </a>{" "}
-              with a bachelor in computer science; Kellen was awarded Summa Cum
-              Laude as one of the top performers of his computer science class.
-              Kellen was lucky enough to have been a student of professor{" "}
-              <a
-                href="https://archive.gunnisontimes.com/obituaries/john-peterson"
-                className="link"
-              >
-                John Peterson
-              </a>{" "}
-              before his untimely death in 2017. John Peterson graduated from
-              Yale and is known for contributing to the creation and
-              documentation for the functional programming language Haskell.
+              Kaylee Mehlhorn graduated from Western Governors University
+              (Salt Lake City) with a bachelor&apos;s degree in Software
+              Engineering and completed the WGU Front-End Developer and Back-End
+              Developer certificates, along with AWS Certified Cloud
+              Practitioner, ITIL 4, and CompTIA Project+ certifications. Prior
+              to WGU, she completed her associate degree at Colorado Mountain
+              College and attended the University of Minnesota Duluth with a
+              focus in cultural entrepreneuring.
             </p>
           </div>
           <div className="row">
-            <h3>Professional Experience</h3>
+            <h3>Projects</h3>
             <p>
-              Kellen has been working professionally for over 10 years as a software
-              engineer. Beginning with an internship at Lockheed Martin, Kellen
-              gained experience in multiple industries and programming
-              languages.
+              My core project work includes UplandLog, a full-stack web
+              application built with Java, Spring Boot, Spring Security, and
+              Angular, plus course projects in Android and backend Java
+              development.
             </p>
             <p>
-              Kellen began his career at Lockheed Martin where he worked on a
-              missile defense project. He worked closely with the IT team and
-              gained a deep knowledge of system administration while also coding
-              an application to track internal hires / departs.
-            </p>
-            <p>
-              In 2018, Kellen moved to Tyler Technologies. He would switch focus
-              from defense to local government. Kellen was responsible for
-              writing custom payment processing software (similar to Stripe) for
-              processing users utility bills. This allowed Tyler Technologies to
-              save cost on payment processor fees which greatly increased
-              revenue for the company and thus increased revenue for
-              shareholders.
-            </p>
-            <p>
-              In 2022, Kellen moved to Tasso Inc. and focused on biomedical
-              technologies through November 2024.{" "}
-              <a href="https://www.tassoinc.com/" className="link">
-                Tasso
-              </a>{" "}
-              is a startup company that makes devices to draw blood via suction
-              (in a painless manner). This revolutionary technology will allow
-              people to get blood tests from the comfort of their home. Kellen
-              works on API's and frontends to enable customers to place orders
-              for said devices.
-            </p>
-            <p>
-              In December 2025, Kellen joined Tech Disc as a Senior Full Stack
-              Developer, building a disc golf simulator platform that helps
-              users improve throw performance with data-driven feedback. His
-              current work includes hardening Bluetooth connectivity and
-              expanding the platform to support multiple connected devices in a
-              single web session.
+              These projects demonstrate hands-on experience with REST APIs,
+              authentication/security, CRUD workflows, cloud deployment, and
+              practical debugging through iterative development.
             </p>
           </div>
         </div>

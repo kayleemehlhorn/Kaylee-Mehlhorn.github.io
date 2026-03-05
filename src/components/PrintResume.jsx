@@ -9,7 +9,7 @@ const PrintResume = () => {
     const searchParams = new URLSearchParams(window.location.search);
     const isPdfMode = searchParams.get("mode") === "pdf";
     const previousTitle = document.title;
-    document.title = "Kellen Stuart - Resume";
+    document.title = "Kaylee Mehlhorn - Resume";
 
     if (isPdfMode) {
       return () => {
@@ -26,99 +26,134 @@ const PrintResume = () => {
       document.title = previousTitle;
     };
   }, []);
+
   return (
     <div className="container-fluid print-resume-page">
       <PrintNavbar />
       <PrintContactInfo
         contacts={[
-          "linkedin.com/in/kellenstuart",
-        ]}
-      />
-      <div className="row">
-        <div className="col-12">
-          <p className="mt-5 ps-1 pe-2">
-            Senior leader with a track record of success in translating business
-            challenges and changing user needs into innovative new features and
-            products for companies including Tech Disc, Tasso Inc., and Lockheed
-            Martin.
-            Highly skilled in leveraging cross-functional collaboration to ensure
-            the on-time completion of end-to-end software development and
-            engineering lifecycles.
-          </p>
-        </div>
-      </div>
-      <PrintHeader title="Professional Experience" />
-      <PrintEmployment
-        title="Senior Full Stack Developer"
-        company="Tech Disc"
-        employmentTimeSpan="Dec 2025 - Present"
-        paragraphText="Build and maintain a web platform for a disc golf simulator that helps users improve throw performance through actionable throw analytics."
-        bulletPoints={[
-          "Led Bluetooth connectivity hardening to improve reliability for production device-to-web communication.",
-          "Building support for connecting multiple Bluetooth-enabled discs to a single web application session.",
-          "Developing end-to-end features across React frontends and Node.js services.",
-          "Performed security vulnerability patching by remediating dependency and package vulnerabilities in the web application stack.",
-          "Working within a modern cloud and developer workflow including Google Cloud Firebase Storage, TypeScript, GitHub Actions, WSL2 Ubuntu, Zsh, and Copilot.",
-        ]}
-      />
-      <PrintEmployment
-        title="Senior Full Stack Developer"
-        company="Tasso Inc."
-        employmentTimeSpan="Dec 2021 - Nov 2024"
-        paragraphText="Led the design, development, and launch of high-impact tools and features leveraging TypeScript, React, Python, C# .NET, Entity Framework Core, AWS CDK, and Nest.JS."
-        bulletPoints={[
-          "Led the planning and execution of projects such as the TassoCare API https://docs.tassocare.com/ and the TassoCare Portal https://portal.tassocare.com/, which required consistent cross-functional collaboration and communication to ensure the on-time, within budget completion of all objectives.",
-          "Enabled the services team to fulfill orders by adding features and fixing bugs in the TassoCare Admin Portal.",
-          "Spearheaded end-to-end integration testing using Jest, Gherkin and Selenium to ensure quality in the TassoCare product line-up.",
-          "Architected a fully scalable feature flagging solution using Gitlab / Unleash / AWS CDK which enabled Tasso to develop new features quickly without immediately releasing them.",
-          "Built a .NET 8 GraphQL API on top of the existing blood-device database using Entity Framework scaffolding, enabling clients to request only needed fields and reducing front-end data joins.",
-          "Worked closely with product management in an Agile environment to ensure the timely delivery of features and bug fixes.",
-        ]}
-      />
-      <PrintEmployment
-        title="Software Engineer"
-        company="Tyler Technologies"
-        employmentTimeSpan="Aug 2018 - Dec 2021"
-        paragraphText="Played an active role as a member of a team of engineers tasked with developing C# .NET web
-applications, mobile applications, and a GraphQL API essential for the success of InSite."
-        bulletPoints={[
-          "Recognized by executive team for the facilitation of company pivots in response to the new challenges of the COVID-19 pandemic.",
-          "Authored hundreds of thousands of lines of code during the creation of new tools essential for maintaining business operations during the pandemic.",
-          "Developed C# .NET Core full stack applications using Blazor / Razor Pages, Entity Framework, TypeScript, and Microsoft SQL Server.",
+          "mehlhorn17@gmail.com",
+          "(651) 341-2359",
+          "Bigfork, MT",
+          "linkedin.com/in/kaylee-mehlhorn-4aa17595",
+          "github.com/kayleemehlhorn",
         ]}
       />
 
+      <div className="row">
+        <div className="col-12">
+          <p className="mt-4 ps-1 pe-2">
+            Software Engineering graduate (March 2026) with hands-on experience building and
+            deploying full-stack applications using Java/Spring Boot and Angular. Strong
+            foundation in REST APIs, authentication/security, databases, and cloud deployment.
+            Seeking an entry-level or internship role (remote preferred) where I can contribute to
+            building reliable, user-focused software.
+          </p>
+        </div>
+      </div>
+
+      <PrintHeader title="Technical Skills" />
+      <div className="row">
+        <div className="col-12">
+          <ul className="ps-4 pe-2 mb-2">
+            <li>
+              <span className="fw-bold">Languages:</span> Java, TypeScript, Python, SQL, HTML,
+              CSS
+            </li>
+            <li>
+              <span className="fw-bold">Frameworks/Libraries:</span> Spring Boot, Spring
+              Security, Angular, React
+            </li>
+            <li>
+              <span className="fw-bold">Tools:</span> Git, GitHub, GitLab, Maven, Docker,
+              Postman
+            </li>
+            <li>
+              <span className="fw-bold">Databases:</span> MySQL, PostgreSQL, H2 (file-based)
+            </li>
+            <li>
+              <span className="fw-bold">Concepts:</span> REST APIs, CRUD,
+              Authentication/Authorization, BCrypt, CORS, MVC, Cloud Deployment, Unit Testing
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <PrintHeader title="Projects" />
       <PrintEmployment
-        title="Software Engineer II"
-        company="Lockheed Martin"
-        employmentTimeSpan="Dec 2015 - Mar 2018"
-        paragraphText="Supported a missile defense system by integrating new technologies."
+        title="UplandLog"
+        company="Full-Stack Web Application"
+        employmentTimeSpan="Java | Spring Boot | Angular"
+        paragraphText="Built and deployed a full-stack web app for upland hunters to log trips and review trip history over time."
         bulletPoints={[
-            "Supported Java development of missile defense system.",
-            "Upgraded internal employee tracking system stored in Excel by building a new Angular web application with a Mongo DB supporting advanced features.",
-            "Automated repititive tasks for the IT team by writing scripts in Powershell.",
-            "Administrator of highly secure RedHat Linux systems which requires a deep understand of unix-like systems."
+          "Developed RESTful backend services in Spring Boot and secured endpoints with HTTP Basic authentication and BCrypt password hashing.",
+          "Containerized backend with Docker and deployed to Render; deployed Angular frontend to Netlify and configured CORS.",
+          "Implemented CRUD workflows for trip data with persistent file-based H2 storage and clear user feedback for validation and errors.",
+        ]}
+      />
+      <PrintEmployment
+        title="TravelTracker"
+        company="Mobile Application (Course Project)"
+        employmentTimeSpan="Android (Java)"
+        paragraphText="Developed a mobile travel tracking application to manage trips and related activities."
+        bulletPoints={[
+          "Implemented data persistence with local storage and validation rules to prevent invalid deletion scenarios.",
+          "Created user flows for adding, editing, viewing, and deleting items with clear UI feedback and error handling.",
+        ]}
+      />
+      <PrintEmployment
+        title="Backend Programming Project"
+        company="Course Project"
+        employmentTimeSpan="Java"
+        paragraphText="Implemented backend logic and data operations with focus on object-oriented design, input validation, and testability."
+        bulletPoints={[
+          "Practiced clean code structure, modular design, and debugging through iterative development.",
         ]}
       />
 
       <PrintHeader title="Education" />
       <div className="row">
         <div className="col-12">
-          <p className="ps-1 pe-2">
-            <span className="fw-bold">Bachelor of Computer Science</span>, Western
-            State Colorado University, 2016 - GPA 3.94/4.0 Summa Cum Laude
+          <p className="ps-1 pe-2 mb-1">
+            <span className="fw-bold">Western Governors University (WGU)</span> - Bachelor of
+            Science, Software Engineering
           </p>
+          <p className="ps-1 pe-2">Graduated March 2026</p>
         </div>
       </div>
 
       <PrintHeader title="Certifications" />
       <div className="row">
         <div className="col-12">
-          <p className="ps-1 pe-2">
-            <span className="fw-bold">CompTIA Security +</span>, 2016
-          </p>
+          <ul className="ps-4 pe-2 mb-2">
+            <li>WGU Certificate: Back-End Developer (Issued Jan 2026)</li>
+            <li>CompTIA Project+ Certification (Issued Sep 2025)</li>
+            <li>ITIL 4 (Issued Feb 2025)</li>
+            <li>AWS Certified Cloud Practitioner (Issued Jan 2025, expires Jan 2028)</li>
+            <li>WGU Certificate: Front-End Developer (Issued May 2024)</li>
+          </ul>
         </div>
       </div>
+
+      <PrintHeader title="Experience" />
+      <PrintEmployment
+        title="Gardener / Landscaping"
+        company="Various Clients"
+        employmentTimeSpan="2012 - Current"
+        paragraphText="Delivered consistent results independently by managing schedules, prioritizing tasks, and meeting deadlines."
+        bulletPoints={[
+          "Communicated with clients to confirm requirements, adjust plans, and ensure quality outcomes.",
+        ]}
+      />
+      <PrintEmployment
+        title="Ski Industry - Rental / Ski Technician"
+        company="Multiple Roles"
+        employmentTimeSpan="2011 - 2023"
+        paragraphText="Collaborated with teams to deliver reliable service during peak demand while maintaining safety standards."
+        bulletPoints={[
+          "Troubleshot equipment fit and performance issues in high-volume customer environments.",
+        ]}
+      />
     </div>
   );
 };

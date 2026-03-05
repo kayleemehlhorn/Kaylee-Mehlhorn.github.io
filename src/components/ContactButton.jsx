@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function ContactButton({ showDownloadPdf = false, downloadLabel = 'Download PDF' }) {
   const buttonStyle = { fontWeight: 'bold', borderRadius: '20px', padding: '10px 20px' };
-  const resumePdfPath = '/Kellen-Stuart-Resume.pdf';
+  const resumePdfPath = '/Kaylee-Mehlhorn-Resume.pdf';
 
   const handleDownloadPdf = async () => {
     try {
@@ -28,7 +28,7 @@ function ContactButton({ showDownloadPdf = false, downloadLabel = 'Download PDF'
       const downloadUrl = window.URL.createObjectURL(blob);
       const anchor = document.createElement('a');
       anchor.href = downloadUrl;
-      anchor.download = 'Kellen-Stuart-Resume.pdf';
+      anchor.download = 'Kaylee-Mehlhorn-Resume.pdf';
       document.body.appendChild(anchor);
       anchor.click();
       anchor.remove();
@@ -46,7 +46,7 @@ function ContactButton({ showDownloadPdf = false, downloadLabel = 'Download PDF'
           size="lg" 
           style={buttonStyle}
         >
-          Contact Kellen
+          Contact Kaylee
         </Button>
       </Link>
       {showDownloadPdf && (

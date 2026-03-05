@@ -8,9 +8,10 @@ function CharacterSheet() {
           <div id="portrait" className="col-3">
             <img
               className="img-fluid"
-              src="/kellen-stardew-portrait-dalle.webp"
+              src="/ProfilePic.jpg"
+              alt="Kaylee Mehlhorn"
             />
-            <span className="stardew-text">Kellen Stuart</span>
+            <span className="stardew-text">Kaylee Mehlhorn</span>
           </div>
           <div id="stats" className="col-9">
             {/* .NET Core */}

@@ -4,15 +4,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import {
   faGithub,
-  faGitlab,
-  faStackOverflow,
   faInstagram,
   faLinkedin
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faFile,
-  faAddressCard,
-  faBookOpen
+  faAddressCard
 } from "@fortawesome/free-solid-svg-icons";
 import KellenStuartLogo from "./KellenStuartLogo";
 import SeniorSoftwareEngineerLogo from "./SeniorSoftwareEngineerLogo";
@@ -54,16 +51,7 @@ function KSNavbar() {
             <FontAwesomeIcon icon={faAddressCard} className="fa-xl link-black navbar-icon" />
           </Nav.Link>
           <Nav.Link
-            as={Link}
-            to="/blog"
-            className="navbar-icon-link"
-            data-label="Blog"
-            aria-label="Blog"
-          >
-            <FontAwesomeIcon icon={faBookOpen} className="fa-xl link-black navbar-icon" />
-          </Nav.Link>
-          <Nav.Link
-            href="https://www.linkedin.com/in/kellenstuart"
+            href="https://www.linkedin.com/in/kaylee-mehlhorn-4aa17595/"
             target="_blank"
             rel="noreferrer"
             className="navbar-icon-link"
@@ -73,37 +61,17 @@ function KSNavbar() {
             <FontAwesomeIcon icon={faLinkedin} className="fa-xl link navbar-icon" />
           </Nav.Link>
           <Nav.Link
-            href="https://github.com/kellen-stuart"
+            href="https://github.com/kayleemehlhorn"
             target="_blank"
             rel="noreferrer"
             className="navbar-icon-link"
-            data-label="Github"
-            aria-label="Github"
+            data-label="GitHub"
+            aria-label="GitHub"
           >
             <FontAwesomeIcon icon={faGithub} className="fa-xl link-black navbar-icon" />
           </Nav.Link>
           <Nav.Link
-            href="https://stackoverflow.com/users/5361412/kellen-stuart"
-            target="_blank"
-            rel="noreferrer"
-            className="navbar-icon-link"
-            data-label="Stackoverflow"
-            aria-label="Stackoverflow"
-          >
-            <FontAwesomeIcon icon={faStackOverflow} className="fa-xl link-orange navbar-icon" />
-          </Nav.Link>
-          <Nav.Link
-            href="https://gitlab.com/kellenstuart"
-            target="_blank"
-            rel="noreferrer"
-            className="navbar-icon-link"
-            data-label="Gitlab"
-            aria-label="Gitlab"
-          >
-            <FontAwesomeIcon icon={faGitlab} className="fa-xl link-orange navbar-icon" />
-          </Nav.Link>
-          <Nav.Link
-            href="https://www.instagram.com/kellenmstuart"
+            href="https://www.instagram.com/kaylee_mehlhorn/"
             target="_blank"
             rel="noreferrer"
             className="navbar-icon-link"

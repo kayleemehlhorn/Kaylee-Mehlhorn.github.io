@@ -14,11 +14,11 @@ This repository contains a React 19 single-page portfolio/resume app built with 
 - `npm run dev` (or `npm start`): start the local Vite dev server at `http://localhost:5173`
 - `npm run build`: create a production build in `dist/` and copy `dist/index.html` to `dist/404.html`
 - `npm run preview`: preview the production build locally
-- `npm run generate:resume-pdf`: use Playwright + headless Chromium to render `/print-resume?mode=pdf` into `dist/Kellen-Stuart-Resume.pdf` (requires `dist/` to exist)
+- `npm run generate:resume-pdf`: use Playwright + headless Chromium to render `/print-resume?mode=pdf` into `dist/Kaylee-Mehlhorn-Resume.pdf` (requires `dist/` to exist)
 
 ### Deploy
 
-- `npm run predeploy`: run the production build and generate `dist/Kellen-Stuart-Resume.pdf`
+- `npm run predeploy`: run the production build and generate `dist/Kaylee-Mehlhorn-Resume.pdf`
 - `npm run deploy`: publish `dist/` using `gh-pages` (runs `predeploy` automatically)
 
 ## Install
@@ -111,4 +111,4 @@ To make the `Download PDF` button return a real PDF locally:
 3. Serve from `dist/`: `npm run preview`
 4. Test `Download PDF` in the preview app
 
-`npm run dev` is not sufficient for this test because it does not serve the generated `dist/Kellen-Stuart-Resume.pdf` artifact.
+`npm run dev` is not sufficient for this test because it does not serve the generated `dist/Kaylee-Mehlhorn-Resume.pdf` artifact.
