@@ -1,13 +1,57 @@
 import React from "react";
-import CharacterSheet from "./CharacterSheet";
 import ContactButton from "./ContactButton";
+
+const uplandLogDemoUrl = "https://uplandlog.netlify.app/";
+const githubUrl = "https://github.com/kayleemehlhorn";
 
 function Resume() {
   return (
     <div>
-      <CharacterSheet />
       <ContactButton showDownloadPdf />
       <div className="container">
+        <div className="row mb-4 mt-4">
+          <div className="col-12">
+            <div className="border rounded p-3 bg-light">
+              <h5 className="mb-2">Recruiter Snapshot</h5>
+              <p className="mb-1">
+                <span className="fw-bold">Target Role:</span> Entry-Level Software Engineer
+                (Full-Stack)
+              </p>
+              <p className="mb-1">
+                <span className="fw-bold">Core Stack:</span> Java, Spring Boot, Spring Security,
+                Angular, REST APIs, SQL, Docker
+              </p>
+              <p className="mb-1">
+                <span className="fw-bold">Featured Project:</span>{" "}
+                <a href={uplandLogDemoUrl} className="link" target="_blank" rel="noopener noreferrer">
+                  UplandLog Live Demo
+                </a>
+              </p>
+              <p className="mb-0 text-muted">
+                First login can take about a minute while Render cold-starts the backend.
+              </p>
+              <div className="d-flex gap-2 flex-wrap mt-3">
+                <a
+                  href={uplandLogDemoUrl}
+                  className="btn btn-primary btn-sm"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View UplandLog Demo
+                </a>
+                <a
+                  href={githubUrl}
+                  className="btn btn-outline-primary btn-sm"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="row justify-content-center mt-4">
           <div className="col-xl-8 col-lg-8 col-md-9 col-sm-12 col-xs-12">
             <hr />
@@ -112,6 +156,12 @@ function Resume() {
                 dates, weather, harvest counts, dog performance) and review trip history over time.
               </li>
               <li>
+                Demo:{" "}
+                <a href={uplandLogDemoUrl} className="link" target="_blank" rel="noopener noreferrer">
+                  uplandlog.netlify.app
+                </a>
+              </li>
+              <li>
                 Developed RESTful backend services in Spring Boot; secured endpoints with HTTP Basic
                 authentication and BCrypt password hashing.
               </li>
@@ -123,6 +173,7 @@ function Resume() {
                 Implemented CRUD workflows for trip data with persistent file-based H2 storage and
                 clear user feedback for validation and errors.
               </li>
+              <li>Note: first sign-in may take about a minute due to Render cold start.</li>
             </ul>
 
             <p className="mb-1 fw-bold">
