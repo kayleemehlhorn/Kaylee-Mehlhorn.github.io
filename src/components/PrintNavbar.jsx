@@ -1,22 +1,13 @@
 import React from "react";
-import SeniorSoftwareEngineerLogo from "./SeniorSoftwareEngineerLogo";
-import { Navbar } from "react-bootstrap";
-import KellenStuartLogo from "./KellenStuartLogo";
 
 function PrintNavbar() {
   return (
-    <>
-      <Navbar expand="lg" className="px-3 navbar bg-light-purple pt-5">
-        <Navbar.Brand>
-          <KellenStuartLogo />
-        </Navbar.Brand>
-        <div className="ms-auto">
-          <Navbar.Brand>
-            <SeniorSoftwareEngineerLogo />
-          </Navbar.Brand>
-        </div>
-      </Navbar>
-    </>
+    <div className="row mt-3">
+      <div className="col-12 ps-2 pe-2">
+        <h2 className="mb-0 print-name-heading">Kaylee Mehlhorn</h2>
+        <div className="print-role-heading">Software Engineer</div>
+      </div>
+    </div>
   );
 }
 
