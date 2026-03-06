@@ -257,6 +257,23 @@ a:hover {
   word-break: break-word;
 }
 
+.print-name-heading {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.print-role-heading {
+  font-size: 1rem;
+  margin-bottom: 0.35rem;
+}
+
+.ats-section-title {
+  text-transform: uppercase;
+  font-size: 1rem;
+  border-bottom: 1px solid #000;
+  padding-bottom: 0.15rem;
+}
+
 @media print {
   @page {
     margin: 0.5in;
@@ -281,6 +298,11 @@ a:hover {
 
   .print-resume-page .row > * {
     min-width: 0;
+  }
+
+  .print-resume-page a {
+    color: #000 !important;
+    text-decoration: none !important;
   }
 
   .col-sm-3 {

@@ -32,17 +32,18 @@ const PrintResume = () => {
       <PrintNavbar />
       <PrintContactInfo
         contacts={[
-          "mehlhorn17@gmail.com",
-          "(651) 341-2359",
-          "Bigfork, MT",
-          "linkedin.com/in/kaylee-mehlhorn-4aa17595",
-          "github.com/kayleemehlhorn",
+          "Email: mehlhorn17@gmail.com",
+          "Phone: (651) 341-2359",
+          "Location: Bigfork, MT",
+          "LinkedIn: https://www.linkedin.com/in/kaylee-mehlhorn-4aa17595/",
+          "GitHub: https://github.com/kayleemehlhorn",
         ]}
       />
 
+      <PrintHeader title="Summary" />
       <div className="row">
         <div className="col-12">
-          <p className="mt-4 ps-1 pe-2">
+          <p className="ps-1 pe-2">
             Software Engineering graduate (March 2026) with hands-on experience building and
             deploying full-stack applications using Java/Spring Boot and Angular. Strong
             foundation in REST APIs, authentication/security, databases, and cloud deployment.
