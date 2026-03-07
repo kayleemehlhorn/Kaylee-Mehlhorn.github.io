@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import ContactButton from "./ContactButton";
 
+const uplandLogDemoUrl = "https://uplandlog.netlify.app/";
+
 function CoverLetter() {
   const [isProfileImageMissing, setIsProfileImageMissing] = useState(false);
 
@@ -54,15 +56,42 @@ function CoverLetter() {
           <div className="row">
             <h3>Projects</h3>
             <p>
-              My core project work includes UplandLog, a full-stack web
-              application built with Java, Spring Boot, Spring Security, and
-              Angular, plus course projects in Android and backend Java
-              development.
+              I focus on project-based experience that demonstrates practical
+              full-stack delivery, secure backend development, and clean,
+              user-focused workflows.
             </p>
-            <p>
-              These projects demonstrate hands-on experience with REST APIs,
-              authentication/security, CRUD workflows, cloud deployment, and
-              practical debugging through iterative development.
+            <ul>
+              <li>
+                <span className="fw-bold">UplandLog (Full-Stack Web Application):</span>{" "}
+                Built and deployed with Java, Spring Boot, Spring Security, and
+                Angular. Includes REST APIs, authentication/authorization,
+                CRUD workflows, Docker deployment, and cloud hosting.
+              </li>
+              <li>
+                <span className="fw-bold">TravelTracker (Course Project):</span>{" "}
+                Android application in Java with local persistence, validation
+                logic, and complete add/edit/view/delete user flows.
+              </li>
+              <li>
+                <span className="fw-bold">Backend Programming Project (Course Project):</span>{" "}
+                Java backend implementation focused on object-oriented design,
+                input validation, testability, and iterative debugging.
+              </li>
+            </ul>
+            <p className="mb-1">
+              <span className="fw-bold">Live demo:</span>{" "}
+              <a
+                href={uplandLogDemoUrl}
+                className="link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                uplandlog.netlify.app
+              </a>
+            </p>
+            <p className="text-muted mb-0">
+              Note: first login can take about a minute while the Render backend
+              cold-starts.
             </p>
           </div>
         </div>
