@@ -68,10 +68,6 @@ function Resume() {
           </div>
           <div className="col-xl-10 col-lg-10 col-md-9 col-sm-9 col-12">
             <p className="mb-1">
-              <a href="mailto:mehlhorn17@gmail.com" className="link">mehlhorn17@gmail.com</a> | (651)
-              341-2359 | Bigfork, MT
-            </p>
-            <p className="mb-1">
               <span className="fw-bold">LinkedIn:</span>{" "}
               <a
                 href="https://www.linkedin.com/in/kaylee-mehlhorn-4aa17595/"
@@ -232,6 +228,18 @@ function Resume() {
             Bachelor of Science, Software Engineering
             <br />
             Graduated March 2026
+            <br />
+            <a href="https://www.wgu.edu/alumni/commencement/e-diploma-verification/validate.html" className="link" target="_blank" rel="noopener noreferrer">
+              WGU E-Diploma Verification Portal
+            </a>
+            <br />
+            Credentials: 2639-V85P-KENB
+            <br />
+            <a href="https://www.wgu.edu/alumni/commencement/e-diploma-verification/validate.html" className="link" target="_blank" rel="noopener noreferrer">
+              WGU E-Diploma Verification Portal
+            </a>
+            <br />
+            Credentials: 2639-V85P-KENB
             <br />
             <br />
             <span className="fw-bold">Colorado Mountain College</span>

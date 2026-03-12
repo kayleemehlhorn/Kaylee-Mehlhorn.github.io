@@ -52,6 +52,13 @@ function CoverLetter() {
               College and attended the University of Minnesota Duluth with a
               focus in cultural entrepreneuring.
             </p>
+            <p className="mb-0">
+              <span className="fw-bold">E-Diploma verification:</span>{" "}
+              <a href="https://www.wgu.edu/alumni/commencement/e-diploma-verification/validate.html" className="link" target="_blank" rel="noopener noreferrer">
+                WGU validation portal
+              </a>
+              {" "}(Credentials: 2639-V85P-KENB)
+            </p>
           </div>
           <div className="row">
             <h3>Projects</h3>
