@@ -59,8 +59,10 @@ function CoverLetter() {
               </a>
               {" "}(Credentials: 2639-V85P-KENB)
             </p>
+
+            
           </div>
-          <div className="row">
+          <div className="row mt-4">
             <h3>Projects</h3>
             <p>
               I focus on project-based experience that demonstrates practical
